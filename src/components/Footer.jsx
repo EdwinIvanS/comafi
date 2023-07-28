@@ -1,0 +1,42 @@
+
+export default function Footer() {
+  return (
+    <>
+      <div className="lineal"></div>
+      <div className="container-footer">
+        <div className="container-contacto">
+          <ul>
+            <img src="/public/icon-comafi.jpeg" alt="logo" />
+            <li>© Copyright 2023</li>
+          </ul>
+        </div>
+        <div className="container-legal">
+          <h4>Legales</h4>
+          <ul>
+            <li>Política de privacidad y protección de datos personales</li>
+            <li>Política de ventas, devoluciones y garantías</li>
+            <li>Garantía de productos</li>
+          </ul>
+        </div>
+        <div className="container-contacto">
+          <h4>Contacto</h4>
+          <ul>
+            <li>Correo: servicioalcliente@comafi.com</li>
+            <li>Teléfono: 6011234567</li>
+            <li>WhatsApp: 300 000 0000</li>
+          </ul>
+        </div>
+        <div className="container-redes">
+          <h4>¡Síguenos en nuestras redes!</h4>
+          <div className="icons-redes">
+            <img src="/public/facebook.png" alt="f" />
+            <img src="/public/instagram.png" alt="i" />
+            <img src="/public/linkedin.png" alt="l" />
+            <img src="/public/youtube.png" alt="y" />
+          </div>
+        </div>
+      </div>
+      <button className="shake svelte-pb3e4p"></button>
+    </>
+  );
+}
