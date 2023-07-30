@@ -6,7 +6,7 @@ export default function Carrusel() {
       <div className="container-carrusel">
         <Carousel>
           <Carousel.Item>
-            <img src="/public/carrusel1.jpeg" alt="1" />
+            <img src="/public/carrusel2.jpeg" alt="1" />
           </Carousel.Item>
           {/*
            <Carousel.Item>
