@@ -1,5 +1,14 @@
 
 export default function Footer() {
+  const phoneNumber = "123456789"; // Reemplaza esto con el número de teléfono deseado
+  const message = "Hola, estoy interesado en sus servicios."; // Opcional: Mensaje predefinido
+
+  const handleWhatsAppClick = () => {
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.location.href = url;
+  };
   return (
     <>
       <div className="lineal"></div>
@@ -36,7 +45,10 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <button className="shake svelte-pb3e4p"></button>
+      <button
+        className="shake svelte-pb3e4p"
+        onClick={handleWhatsAppClick}
+      ></button>
     </>
   );
 }

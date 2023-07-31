@@ -154,10 +154,7 @@ export default function Formulario() {
                   onChange={handleInputChange}
                 />
               </Box>
-              <div
-                className="centered"
-                style={{ paddingBottom: "30px" }}
-              >
+              <div className="centered" style={{ paddingBottom: "30px" }}>
                 <Button variant="contained" onClick={handleFormSubmit}>
                   Enviar
                 </Button>
