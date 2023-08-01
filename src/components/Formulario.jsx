@@ -1,3 +1,4 @@
+import axios from "axios";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
@@ -10,12 +11,11 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import { useState } from "react";
 
 export default function Formulario() {
-
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [description, setDescription] = useState("");
-  const [errors, setErrors] = useState({});  
+  const [errors, setErrors] = useState({});
   const [checked, setChecked] = useState(false);
 
   const handleChange = (event) => {
@@ -24,19 +24,29 @@ export default function Formulario() {
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-    if (name === "name") {setName(value);} 
-    else if (name === "phone") {setPhone(value);} 
-    else if (name === "email") {setEmail(value);} 
-    else if (name === "description") {setDescription(value);}
+    if (name === "name") {
+      setName(value);
+    } else if (name === "phone") {
+      setPhone(value);
+    } else if (name === "email") {
+      setEmail(value);
+    } else if (name === "description") {
+      setDescription(value);
+    }
   };
 
-  const handleFormSubmit = (event) => {   
+  const handleFormSubmit = (event) => {
     event.preventDefault();
-    // Aquí puedes realizar las validaciones personalizadas según tus requerimientos
     const validationErrors = {};
-    if (name.trim() === '') { validationErrors.name = 'El nombre es requerido';}
-    if (phone.trim() === '') {validationErrors.phone = 'El teléfono es requerido';}
-    if (email.trim() === '') {validationErrors.email = 'El email es requerido';}
+    if (name.trim() === "") {
+      validationErrors.name = "El nombre es requerido";
+    }
+    if (phone.trim() === "") {
+      validationErrors.phone = "El teléfono es requerido";
+    }
+    if (email.trim() === "") {
+      validationErrors.email = "El email es requerido";
+    }
     if (description.trim() === "") {
       validationErrors.description = "La descripción es requerida";
     }
@@ -44,13 +54,24 @@ export default function Formulario() {
       validationErrors.terms = "Debes aceptar los términos y condiciones";
     }
 
-    // También puedes agregar otras validaciones, como validar el formato del email o el teléfono
     setErrors(validationErrors);
 
-    // Si no hay errores, puedes enviar el formulario
     if (Object.keys(validationErrors).length === 0) {
-      // Aquí puedes realizar el envío del formulario o la acción que desees
-      console.log('Formulario enviado con éxito!');
+      const formData = {
+        name: name,
+        phone: phone,
+        email: email,
+        description: description,
+        terms: checked,
+      };
+
+      axios.post("/send-email", formData)
+        .then((response) => {
+          console.log("Respuesta del servidor:", response.data);
+        })
+        .catch((error) => {
+          console.error("Error al enviar el formulario:", error);
+        });
     }
   };
 
