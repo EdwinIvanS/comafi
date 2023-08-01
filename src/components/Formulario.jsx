@@ -111,6 +111,7 @@ export default function Formulario() {
                   onChange={handleInputChange}
                   error={!!errors.name}
                   helperText={errors.name}
+                  autoComplete="off"
                 />
               </div>
               <div className="text-input">
@@ -126,6 +127,7 @@ export default function Formulario() {
                   onChange={handleInputChange}
                   error={!!errors.phone}
                   helperText={errors.phone}
+                  autoComplete="off"
                 />
               </div>
               <div className="text-input">
@@ -141,6 +143,7 @@ export default function Formulario() {
                   onChange={handleInputChange}
                   error={!!errors.email}
                   helperText={errors.email}
+                  autoComplete="off"
                 />
               </div>
             </Box>
@@ -159,6 +162,7 @@ export default function Formulario() {
                 onChange={handleInputChange}
                 error={!!errors.description}
                 helperText={errors.description}
+                autoComplete="off"
               />
             </Box>
             <FormControlLabel

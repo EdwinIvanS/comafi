@@ -311,8 +311,22 @@ body{
   margin: 1%;
   width: 100%;
 }
+.text-input svg{
+  color: var(--palette-background-header);
+}
 .text-input div{
   width: 100%;
+}
+.centered button{
+  background-color: var(--palette-background-header);
+}
+.MuiBox-root label span svg,
+.MuiFormControl-root .css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+  color: var(--palette-background-header);
+}
+.MuiFormControl-root .css-85zwa9-MuiInputBase-root-MuiFilledInput-root:after,
+.MuiFormControl-root .css-1ff8729-MuiInputBase-root-MuiFilledInput-root::after{
+    border-bottom: 2px solid #e6c725;
 }
 .centered{
   display: grid;
