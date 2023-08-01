@@ -1,7 +1,6 @@
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from '@mui/material/Toolbar';
-import Typography from "@mui/material/Typography";
 import AppBar from "@mui/material/AppBar";
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
@@ -14,7 +13,7 @@ import { listNav } from "../javascript/list-navbar";
 
 export default function AppBarPrincipal() {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
-  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 750);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 606);
 
   const toggleDrawer = () => {
     setDrawerOpen(!isDrawerOpen);
@@ -36,7 +35,7 @@ export default function AppBarPrincipal() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 750);
+      setIsMobileView(window.innerWidth <= 606);
     };
 
     window.addEventListener('resize', handleResize);
@@ -50,23 +49,27 @@ export default function AppBarPrincipal() {
     <div>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            onClick={toggleDrawer}
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Empresa
-          </Typography>
+          {isMobileView && (
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              onClick={toggleDrawer}
+              sx={{ mr: 2 }}
+            >
+              <MenuIcon />
+            </IconButton>
+          )}
           {/* Los botones de opciones se muestran solo en vista de escritorio */}
           <div style={{ margin: "auto" }}>
             {!isMobileView && (
               <>
+                <Link to={"/"}>
+                  <Button color="inherit" style={{ padding: "10px" }}>
+                    Inicio
+                  </Button>
+                </Link>
                 <Link to={"/AboutUs"}>
                   <Button color="inherit" style={{ padding: "10px" }}>
                     Acerca de Nosotros

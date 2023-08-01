@@ -1,10 +1,13 @@
 import { contacto } from "../javascript/list-info";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <div className="container-header">
       <div className="header-logo">
-        <img src="/public/icon-comafi.jpeg" alt="logo" />
+        <Link to={"/"}>
+          <img src="/public/icon-comafi.jpeg" alt="logo" />
+        </Link>
       </div>
       <ul className="menu-links">
         {contacto.map((data) => {

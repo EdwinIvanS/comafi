@@ -119,6 +119,9 @@ body{
 .MuiToolbar-root{
   height: 70px;
 }
+.MuiToolbar-root div a {
+  color: black;
+}
 .MuiPaper-root .css-hyum1k-MuiToolbar-root{
   background-color: var(--palette-background-header);
   color: #000000;
@@ -284,7 +287,6 @@ body{
 }
 
 /*Formulario*/
-
 .formulario{
   padding: 0px 30px 25px;
 }
@@ -502,6 +504,7 @@ body{
   padding: 20px;
   margin: 20px;
 }
+
 
 /*Media query*/
 @media (max-width: 849px) {
