@@ -9,6 +9,7 @@ import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import { useState } from "react";
+import { Typography } from "@mui/material";
 
 export default function Formulario() {
   const [name, setName] = useState("");
@@ -195,9 +196,13 @@ export default function Formulario() {
                 />
               }
               label="Acepto los términos y condiciones"
-              error={!!errors.terms}
-              helperText={errors.terms}
+              error={errors.terms ? "true" : undefined}
             />
+            {errors.terms && (
+              <Typography variant="body2" color="error">
+                {errors.terms}
+              </Typography>
+            )}
             <div className="centered" style={{ paddingBottom: "30px" }}>
               <Button variant="contained" onClick={handleFormSubmit}>
                 Enviar

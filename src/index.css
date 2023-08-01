@@ -129,7 +129,23 @@ body{
 .MuiPaper-root .css-1juivf6-MuiTypography-root{
     flex-grow: 0; 
 }
-
+.MuiDrawer-root .MuiPaper-root{
+  width: 250px;
+}
+.MuiDrawer-root .MuiPaper-root ul {
+  padding-top: 30px;
+}
+.MuiDrawer-root .MuiPaper-root ul li a {
+  text-decoration: none;
+}
+.MuiDrawer-root .MuiPaper-root ul li a div{
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.MuiDrawer-root .MuiPaper-root ul li a div div span{
+  padding-left: 15px;
+}
 /*Container Carrusel*/
 .container-carrusel{
   border: 5px solid var(--palette-background-black);

@@ -12,21 +12,24 @@ import { Link } from "react-router-dom";
 import { listNav } from "../javascript/list-navbar";
 
 export default function AppBarPrincipal() {
+  const serverPath = window.location.origin;
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 606);
 
   const toggleDrawer = () => {
     setDrawerOpen(!isDrawerOpen);
   };
-
   const list = (
     <List>
       {listNav.map((data) => {
         return (
           <li key={data.id}>
-            <ListItem button>
-              <ListItemText primary={data.name} />
-            </ListItem>
+            <Link to={serverPath + data.path}>
+              <ListItem button>
+                <data.icon />
+                <ListItemText primary={data.name} />
+              </ListItem>
+            </Link>
           </li>
         );
       })}
