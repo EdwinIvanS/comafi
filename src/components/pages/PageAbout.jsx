@@ -14,11 +14,11 @@ export default function PageAbout() {
               <span>Visión</span>
             </div>
             <p>
-              "En el 2028 ser la empresa líder en importación y distribución de
+              En el 2028 ser la empresa líder en importación y distribución de
               insumos para construcción en Panamá, reconocida por nuestra
               excelencia en la calidad de productos y servicios, así como por
               nuestra contribución al desarrollo sostenible del sector de la
-              construcción en el país."
+              construcción en el país.
             </p>
           </div>
           <div className="card_empresa">
@@ -27,12 +27,12 @@ export default function PageAbout() {
               <span>Misión</span>
             </div>
             <p>
-              "En Comafi, nuestra misión es proveer soluciones integrales en
+              En Comafi, nuestra misión es proveer soluciones integrales en
               insumos para construcción, satisfaciendo las necesidades de
               nuestros clientes y superando sus expectativas. Trabajamos con un
               enfoque de responsabilidad y ética, garantizando la disponibilidad
               oportuna de productos de alta calidad para contribuir al progreso
-              y la eficiencia en los proyectos de construcción en Panamá."
+              y la eficiencia en los proyectos de construcción en Panamá.
             </p>
           </div>
         </div>
