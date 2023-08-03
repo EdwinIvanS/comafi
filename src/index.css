@@ -32,6 +32,7 @@ body{
   margin-right: auto;
   margin-left: auto;
 }
+.use h1,
 .container h1{
   font-size: 30px;
   font-weight: 700;
@@ -195,36 +196,6 @@ body{
   margin-top: 15px;
   color: white;
 }
-
-/*
-.container-card .card1{
-  background-color: #2E8BD9;   
-  width: 200px;
-  height: 180px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  align-items: center;
-  text-align: center;
-  margin: 10px;
-}
-.container-card .card1:hover{
-  box-shadow: 0px 0px 5px 3px #1A5276;
-  background-color: #D4AC0D;
-  background-color: #318bc7;
-}
-.container-card .card1 img{
-  width: 30%;
-  height: 30%;
-  filter: brightness(0) invert(1);
-  margin: 30px 0px;
-}
-.container-card .card1 img:hover{
-  filter: brightness(0) invert(1);
-}
-.container-card .card1 p{
-  color: white;
-}
-*/
 
 /*Blog*/
 .container-blog{
@@ -435,18 +406,7 @@ body{
   height: 90px;
   background-color: #222222;
 }
-#u37799 {
-  z-index: 294;
-  height: 502px;
-  background-image: url("https://www.abacol.co/fibraplas_concrete/images/banner-pantalla-1.jpg?crc=3770388017");
-  opacity: 1;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-position: center top;
-  filter: alpha(opacity=100);
-  background-size: contain;
-  border: 1px solid red;
-}
+
 #u38332-6 {
   font-weight: 700;
   text-transform: uppercase;
@@ -457,15 +417,10 @@ body{
 .center{
   display: flex;
   justify-content: space-between;
+  height: 220px;
 }
 .center ul{
   list-style: none;
-}
-.center .ul-grup-1{
-  text-align: end;
-}
-.center .ul-grup-2{
-  text-align: left;
 }
 .use{
   background-color: #FECB00;
@@ -475,8 +430,27 @@ body{
 }
 .details-product{
   display: flex;
+  align-items: baseline;
   justify-content: space-evenly;
-  height: 240px;
+  height: 160px;
+}
+.details-product div{
+  text-align: center;
+}
+.details-product div img{ 
+ background: white;
+ border-radius: 10px;
+}
+.details-product div p{ 
+ margin-top: 14px;
+}
+.details-product div img:hover{
+  -webkit-tap-highlight-color: transparent; 
+  background: white;
+  border-radius: 100px;
+}
+.details-product div:hover{
+  color: #7c7a7a;
 }
 .clearfix-card{
   display: flex;
@@ -535,6 +509,28 @@ body{
   margin: 20px;
 }
 
+/*Productos*/
+.clearfix h1{
+  margin: 0;
+  padding-bottom:0 ;
+}
+.clearfix #u38332-4{
+  padding: 0 15px 15px;
+}
+.clearfix-p p{
+  margin: 0;
+  text-align: center;
+}
+.center .ul-product{
+  width: 50%;
+  text-align: initial;
+}
+.center .ul-product .ul-grup-1 li{
+  padding: 5px;
+}
+.center .img-product {
+  width: 50%;
+}
 
 /*Media query*/
 @media (max-width: 849px) {

@@ -1,64 +1,63 @@
+import Carrusel from '../Carrusel'
 export default function PageProducts() {
   return (
     <>
-      <div className="container-img-nav"></div>
-      <div className="museBGSize" id="u37799"></div>
-      <div className="clearfix grpelem" id="u38313">
-        <div
-          className="clearfix colelem shared_content"
-          id="u38332-6"
-          data-content-guid="u38332-6_content"
-        >
+      <Carrusel />
+      <div id="u38313">
+        <div className="container clearfix">
           <h1 id="u38332-2">Fibraplas Concrete</h1>
           <h1 id="u38332-4">Reemplaza la Malla Electrosoldada</h1>
-        </div>
-        <div className="clearfix" data-content-guid="u38308-6_content">
-          <p id="u38308-2">
-            Macrofibra sintética estructural, fabricada bajo la Norma
-            Internacional ASTMC-1116-10 Tipo 3 y Norma NSR10
-          </p>
-          <p id="u38308-4">
-            Diseñada para ser involucrada de forma fácil al concreto, mejorando
-            sus propiedades, reemplazando la malla electrosoldada y las fibras
-            metálicas, siendo fibra de refuerzo para el concreto.
-          </p>
-        </div>
-        <div className="center">
-          <ul className="ul-grup-1">
-            <li>Reemplaza la Malla Electrosoldada</li>
-            <li>AHORRO DEL MÁS 50% frente a la malla electrosoldada</li>
-            <li>Con 4 mazos rinde 1.5m2 de placa de 10cm</li>
-          </ul>
-          <ul className="ul-grup-2">
-            <li>
-              Mejora las propiedades de los pisos y entre pisos de Concreto
-            </li>
-            <li>Más liviana que el acero</li>
-            <li>Reduce la huella de Carbono en el medio ambiente</li>
-          </ul>
+          <div className="clearfix-p">
+            <p id="u38308-2">
+              Macrofibra sintética estructural, fabricada bajo la Norma
+              Internacional ASTMC-1116-10 Tipo 3 y Norma NSR10
+            </p>
+            <p id="u38308-4">
+              Diseñada para ser involucrada de forma fácil al concreto,
+              mejorando sus propiedades, reemplazando la malla electrosoldada y
+              las fibras metálicas, siendo fibra de refuerzo para el concreto.
+            </p>
+          </div>
+          <div className="center container">
+            <div className="img-product">
+              <img src="/public/mazo-fibra.png" alt=""  width="200px"/>
+            </div>
+            <div className='ul-product'>
+              <ul className="ul-grup-1">
+                <li>Reemplaza la Malla Electrosoldada</li>
+                <li>AHORRO DEL MÁS 50% frente a la malla electrosoldada</li>
+                <li>Con 4 mazos rinde 1.5m2 de placa de 10cm</li>
+                <li>
+                  Mejora las propiedades de los pisos y entre pisos de Concreto
+                </li>
+                <li>Más liviana que el acero</li>
+                <li>Reduce la huella de Carbono en el medio ambiente</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div className="use">
         <h1>USE FIBRAPLAS CONCRETE EN:</h1>
         <div className="details-product">
           <div>
-            <img src="" alt="" />
+            <img src="/public/construction.png" width="100px" />
             <p>Losas de Concreto</p>
           </div>
           <div>
-            <img src="" alt="" />
+            <img src="/public/wood.png" width="90px" />
             <p>Pisos de Concreto</p>
           </div>
           <div>
-            <img src="" alt="" />
+            <img src="/public/road.png" width="90px" />
             <p>Pavimentos Rígidos</p>
           </div>
           <div>
-            <img src="" alt="" />
+            <img src="/public/tunnel.png" width="90px" />
             <p>Túneles</p>
           </div>
           <div>
-            <img src="" alt="" />
+            <img src="/public/under-construction.png" width="90px" />
             <p>Concretos Pre Fabricados</p>
           </div>
           <div>
@@ -67,17 +66,16 @@ export default function PageProducts() {
         </div>
       </div>
 
-      <div className="clearfix">
-        <p id="u40633-2">
-          Personas que se han unido al Poder de Fibraplas Concrete
-        </p>
+      <div className="container clearfix">
+        <h1>Personas que se han unido al Poder de Fibraplas Concrete</h1>
         <p id="u40614-2">
           Desde distintos puntos ingeniaros, arquitectos, constructores nos
           hablan de porque Fibraplas Concrete es la mejor opción para reemplazar
           la malla electrosoldada, para pisos, entre pisos de concreto,
           pre-fabricados entre otros.
         </p>
-      </div>      
+      </div>
+
       <div className="clearfix-card">
         <div
           className="grpelem_shared"
