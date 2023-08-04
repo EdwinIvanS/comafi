@@ -31,4 +31,5 @@ export const blogs = [
     descripcion:
       "Las electrobombas de agua son dispositivos utilizados para producir el movimiento o desplazamiento de un fluido en contra de la presión a través",
   },
+  
 ];

@@ -4,8 +4,7 @@ export const listCategories = [
     id: 1,
     img: "/public/wire.png",
     //img: "/public/mazo-fibra.png",
-    title: "Fibraplas Concrete",
-    
+    title: "Fibraplas Concrete",    
   },
 ];
   /*
