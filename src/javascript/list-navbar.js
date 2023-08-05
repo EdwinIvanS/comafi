@@ -34,5 +34,5 @@ export const listNav = [
     name: "Galeria",
     path: "/Gallery",
     icon: CollectionsIcon,
-  },
+  }
 ];

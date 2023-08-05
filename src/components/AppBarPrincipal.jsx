@@ -19,6 +19,7 @@ export default function AppBarPrincipal() {
   const toggleDrawer = () => {
     setDrawerOpen(!isDrawerOpen);
   };
+
   const list = (
     <List>
       {listNav.map((data) => {
@@ -68,36 +69,23 @@ export default function AppBarPrincipal() {
           <div style={{ margin: "auto" }}>
             {!isMobileView && (
               <>
-                <Link to={"/"}>
-                  <Button color="inherit" style={{ padding: "10px" }}>
-                    Inicio
-                  </Button>
-                </Link>
-                <Link to={"/AboutUs"}>
-                  <Button color="inherit" style={{ padding: "10px" }}>
-                    Acerca de Nosotros
-                  </Button>
-                </Link>
-                <Link to={"/Catalog"}>
-                  <Button color="inherit" style={{ padding: "10px" }}>
-                    Catalógo
-                  </Button>
-                </Link>
-                <Link to={"/Contact"}>
-                  <Button color="inherit" style={{ padding: "10px" }}>
-                    Contacto
-                  </Button>
-                </Link>
-                <Link to={"/Gallery"}>
-                  <Button color="inherit" style={{ padding: "10px" }}>
-                    Galeria
-                  </Button>
-                </Link>
+                {listNav.map((data) => {
+                  return (
+                    <>
+                      <Link to={serverPath + data.path} key={data.id}>
+                        <Button color="inherit" style={{ padding: "10px" }}>
+                          {data.name}
+                        </Button>
+                      </Link>
+                    </>
+                  );
+                })}
               </>
             )}
           </div>
         </Toolbar>
       </AppBar>
+      
       {/* El Drawer se muestra solo en vista móvil */}
       {isMobileView && (
         <Drawer anchor="left" open={isDrawerOpen} onClose={toggleDrawer}>

@@ -1,4 +1,49 @@
-import Carrusel from '../Carrusel'
+import Carrusel from '../Carrusel';
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import Paper from "@mui/material/Paper";
+
+function createData(Concepto, Valor) {
+  return { Concepto, Valor };
+}
+const columns = [
+  {
+    id: 1,
+    name: "Concepto",
+  },
+  {
+    id: 2,
+    name: "Valor",
+  },
+];
+
+const rows = [
+  createData("Diametro Promedio", "0.6 mm"),
+  createData("Tipo de Microfibra", "Sintética"),
+  createData("Longitud", "55 mm"),
+  createData("Fibras x KG promedio", "36600 un"),
+  createData("Dosificación Frecuente", "3.0 a 6.0 kg/m³"),
+  createData("Fibras por m3 (Dosificación Promedio)", "183000 un"),
+  createData("Gravedad específica", "1.27 g/cm³"),
+  createData("Resistencia máxima a la tensión", "524 MPa"),
+  createData("Módulo de elasticidad promedio", "4.8 GPa"),
+  createData("Textura superficial", "Marcado de máximo anclaje"),
+  createData("Punto de fusión", "260 ºC"),
+  createData("Punto de fusión", "SI"),
+  createData("Relación de aspecto", "92"),
+  createData("Color", "Característico"),
+  createData("Absorción", "Nula"),
+  createData("Resistencia a sales ácidas", "Alta"),
+  createData("Resistencia al álcali", "Alta"),
+  createData("Resistencia a mono-hongos", "Alta"),
+  createData("Conductividad eléctrica", "Baja"),
+  createData("Conductividad térmica", "Baja"),
+];
+
 export default function PageProducts() {
   return (
     <>
@@ -20,9 +65,9 @@ export default function PageProducts() {
           </div>
           <div className="center container">
             <div className="img-product">
-              <img src="/public/mazo-fibra.png" alt=""  width="200px"/>
+              <img src="/public/mazo-fibra.png" alt="" width="200px" />
             </div>
-            <div className='ul-product'>
+            <div className="ul-product">
               <ul className="ul-grup-1">
                 <li>Reemplaza la Malla Electrosoldada</li>
                 <li>AHORRO DEL MÁS 50% frente a la malla electrosoldada</li>
@@ -74,70 +119,110 @@ export default function PageProducts() {
           la malla electrosoldada, para pisos, entre pisos de concreto,
           pre-fabricados entre otros.
         </p>
+        <div className="clearfix-card">
+          <div
+            className="grpelem_shared"
+            id="u46124"
+            data-content-guid="u46124_content"
+          >
+            <iframe
+              width="350"
+              height="270"
+              src="https://www.youtube.com/embed/EKD_X49QG-w"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+            <div className="colelem" id="u40617-4">
+              <p id="u40617-2">
+                <strong>Julio Zambrano</strong>
+              </p>
+            </div>
+            <div className="colelem" id="u40616-6">
+              <p id="u40630-2">Ingeniero Civil</p>
+              <p id="u40630-2" className="u406303">
+                Director Obra Central del Pacífico
+              </p>
+            </div>
+          </div>
+          <div className="grpelem_shared" id="u46140">
+            <iframe
+              width="350"
+              height="270"
+              src="https://www.youtube.com/embed/xOiRqVFHtB4"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+            <div className="colelem" id="u40622-4">
+              <p id="u40617-2">
+                <strong>Adrian Baz</strong>
+              </p>
+            </div>
+            <div className="colelem" id="u40626-4">
+              <p id="u40630-2" className="u406303">
+                Ingeniero de Caminos y Puertos
+              </p>
+            </div>
+          </div>
+          <div
+            className="grpelem_shared"
+            id="u46148"
+            data-content-guid="u46148_content"
+          >
+            <iframe
+              width="350"
+              height="270"
+              src="https://www.youtube.com/embed/fJ4rLwc-5So"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+            <div className="colelem" id="u40629-4">
+              <p id="u40617-2">
+                <strong>César Torres</strong>
+              </p>
+            </div>
+            <div className="colelem" id="u40630-6">
+              <p id="u40630-2">Ingeniero Civil</p>
+              <p id="u40630-2" className="u406303">
+                Diseñador Estructural
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className="clearfix-card">
-        <div
-          className="grpelem_shared"
-          id="u46124"
-          data-content-guid="u46124_content"
-        >
-          <iframe
-            width="350"
-            height="270"
-            src="https://www.youtube.com/embed/EKD_X49QG-w"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen=""
-          ></iframe>
-          <div className="clearfix colelem" id="u40617-4">
-            <p id="u40617-2">Julio Zambrano</p>
-          </div>
-          <div className="clearfix colelem" id="u40616-6">
-            <p id="u40616-2">Ingeniero Civil</p>
-            <p id="u40616-4">Director Obra Central del Pacífico</p>
-          </div>
-        </div>
-        <div className="grpelem_shared" id="u46140">
-          <iframe
-            width="350"
-            height="270"
-            src="https://www.youtube.com/embed/xOiRqVFHtB4"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen=""
-          ></iframe>
-          <div className="clearfix colelem" id="u40622-4">
-            <p id="u40622-2">Adrian Baz</p>
-          </div>
-          <div className="clearfix colelem" id="u40626-4">
-            <p id="u40626-2">Ingeniero de Caminos y Puertos</p>
-          </div>
-        </div>
-        <div
-          className="grpelem_shared"
-          id="u46148"
-          data-content-guid="u46148_content"
-        >
-          <iframe
-            width="350"
-            height="270"
-            src="https://www.youtube.com/embed/fJ4rLwc-5So"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen=""
-          ></iframe>
-          <div className="clearfix colelem" id="u40629-4">
-            <p id="u40629-2">César Torres</p>
-          </div>
-          <div className="clearfix colelem" id="u40630-6">
-            <p id="u40630-2">Ingeniero Civil</p>
-            <p id="u40630-4">Diseñador Estructural</p>
-          </div>
-        </div>
+      <div className="lineal-yelow"></div>
+
+      <div className="container">
+        <h1>Especificaciones Técnicas</h1>
+        <TableContainer component={Paper}>
+          <Table sx={{ minWidth: 550 }} aria-label="simple table">
+            <TableHead>
+              <TableCell align="left">Concepto</TableCell>
+              <TableCell align="left">Valor</TableCell>
+            </TableHead>
+            <TableBody>
+              {rows.map((row) => (
+                <TableRow
+                  key={row.name}
+                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                >
+                  <TableCell component="th" scope="row">
+                    {row.Concepto}
+                  </TableCell>
+                  <TableCell component="th" scope="row">
+                    {row.Valor}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
       </div>
     </>
   );
