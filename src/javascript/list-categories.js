@@ -2,7 +2,7 @@
 export const listCategories = [
   {
     id: 1,
-    img: "/public/wire.png",
+    img: "/wire.png",
     title: "Fibraplas Concrete",    
   },
 ];

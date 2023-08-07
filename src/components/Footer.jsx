@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="container-footer">
         <div className="container-contacto">
           <ul>
-            <img src="/public/icon-comafi.jpeg" alt="logo" />
+            <img src="/icon-comafi.jpeg" alt="logo" />
             <li>© Copyright 2023</li>
           </ul>
         </div>
@@ -38,10 +38,10 @@ export default function Footer() {
         <div className="container-redes">
           <h4>¡Síguenos en nuestras redes!</h4>
           <div className="icons-redes">
-            <img src="/public/facebook.png" alt="f" />
-            <img src="/public/instagram.png" alt="i" />
-            <img src="/public/linkedin.png" alt="l" />
-            <img src="/public/youtube.png" alt="y" />
+            <img src="/facebook.png" alt="f" />
+            <img src="/instagram.png" alt="i" />
+            <img src="/linkedin.png" alt="l" />
+            <img src="/youtube.png" alt="y" />
           </div>
         </div>
       </div>

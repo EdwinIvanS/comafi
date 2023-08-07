@@ -8,7 +8,7 @@ export default function Carrusel() {
         <Link to={"/Products"}>
           <Carousel>
             <Carousel.Item>
-              <img src="/public/carrusel2.jpeg" alt="1" />
+              <img src="/carrusel2.jpeg" alt="1" />
             </Carousel.Item>
           </Carousel>
         </Link>

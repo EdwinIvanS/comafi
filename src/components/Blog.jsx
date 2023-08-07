@@ -12,11 +12,6 @@ export default function Blog() {
               <div className="proj-txtx">
                 <strong>{data.title}</strong>
               </div>
-              {/*
-              <p className="card-title">
-                <strong>{data.title}</strong>
-              </p>
-               */}
             </div>
           );
         })}        

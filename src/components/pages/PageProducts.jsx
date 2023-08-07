@@ -7,6 +7,12 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
+import AddCircleIcon from "@mui/icons-material/AddCircle";
+import WebhookIcon from "@mui/icons-material/Webhook";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { Link } from 'react-router-dom';
 
 function createData(Concepto, Valor) {
   return { Concepto, Valor };
@@ -66,7 +72,7 @@ export default function PageProducts() {
           </div>
           <div className="center container">
             <div className="img-product">
-              <img src="/public/mazo-fibra.png" alt="" width="200px" />
+              <img src="/mazo-fibra.png" alt="" width="200px" />
             </div>
             <div className="ul-product">
               <ul className="ul-grup-1">
@@ -101,23 +107,23 @@ export default function PageProducts() {
         <h1>USE FIBRAPLAS CONCRETE EN:</h1>
         <div className="details-product">
           <div>
-            <img src="/public/construction.png" width="100px" />
+            <img src="/construction.png" width="100px" />
             <p>Losas de Concreto</p>
           </div>
           <div>
-            <img src="/public/wood.png" width="90px" />
+            <img src="/wood.png" width="90px" />
             <p>Pisos de Concreto</p>
           </div>
           <div>
-            <img src="/public/road.png" width="90px" />
+            <img src="/road.png" width="90px" />
             <p>Pavimentos Rígidos</p>
           </div>
           <div>
-            <img src="/public/tunnel.png" width="90px" />
+            <img src="/tunnel.png" width="90px" />
             <p>Túneles</p>
           </div>
           <div>
-            <img src="/public/under-construction.png" width="90px" />
+            <img src="/under-construction.png" width="90px" />
             <p>Concretos Pre Fabricados</p>
           </div>
           <div>
@@ -213,10 +219,13 @@ export default function PageProducts() {
 
       <div className="lineal-yelow"></div>
 
-      <div className="container">
+      <div className="container tb-01">
         <h1>Especificaciones Técnicas</h1>
-        <TableContainer component={Paper}>
-          <Table sx={{ minWidth: 550 }} aria-label="simple table">
+        <TableContainer component={Paper} id="table-001">
+          <Table
+            sx={{ maxWidth: 550, margin: "auto" }}
+            aria-label="simple table"
+          >
             <TableHead>
               <TableCell align="left">Concepto</TableCell>
               <TableCell align="left">Valor</TableCell>
@@ -238,6 +247,39 @@ export default function PageProducts() {
             </TableBody>
           </Table>
         </TableContainer>
+      </div>
+
+      <div className="use tb-01">
+        <h1>Conoce y Descarga más Aspectos Técnicos:</h1>
+        <div className="aspectos">
+          <Link to="https://www.abacol.co/fibraplas_concrete/assets/fibraplas-concrete_libro_baja.pdf">
+            <div className="aspectos-tecnicos">
+              <AutoStoriesIcon />
+              <p>Ver Libro</p>
+            </div>
+          </Link>
+
+          <Link to="https://www.flickr.com/photos/abacoltyd/albums/72157676918282955">
+            <div className="aspectos-tecnicos">
+              <AddAPhotoIcon />
+              <p>Ver Galería de obras</p>
+            </div>
+          </Link>
+
+          <Link to="https://www.abacol.co/fibraplas_concrete/assets/ficha-tecnica-fibraplas.pdf">
+            <div className="aspectos-tecnicos">
+              <AddCircleIcon />
+              <p>Ver ficha Técnica</p>
+            </div>
+          </Link>
+
+          <Link to="https://www.abacol.co/fibraplas_concrete/assets/ficha-tecnica-fibraplas.pdf">
+            <div className="aspectos-tecnicos">
+              <WebhookIcon />
+              <p>Software de cálculo FPC</p>
+            </div>
+          </Link>
+        </div>
       </div>
     </>
   );
