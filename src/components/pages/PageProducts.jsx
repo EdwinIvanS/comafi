@@ -6,6 +6,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 function createData(Concepto, Valor) {
   return { Concepto, Valor };
@@ -69,14 +70,28 @@ export default function PageProducts() {
             </div>
             <div className="ul-product">
               <ul className="ul-grup-1">
-                <li>Reemplaza la Malla Electrosoldada</li>
-                <li>AHORRO DEL MÁS 50% frente a la malla electrosoldada</li>
-                <li>Con 4 mazos rinde 1.5m2 de placa de 10cm</li>
                 <li>
-                  Mejora las propiedades de los pisos y entre pisos de Concreto
+                  <CheckCircleOutlineIcon /> Reemplaza la Malla Electrosoldada
                 </li>
-                <li>Más liviana que el acero</li>
-                <li>Reduce la huella de Carbono en el medio ambiente</li>
+                <li>
+                  <CheckCircleOutlineIcon /> AHORRO DEL MÁS 50% frente a la
+                  malla electrosoldada
+                </li>
+                <li>
+                  <CheckCircleOutlineIcon /> Con 4 mazos rinde 1.5m2 de placa de
+                  10cm
+                </li>
+                <li>
+                  <CheckCircleOutlineIcon /> Mejora las propiedades de los pisos
+                  y entre pisos de Concreto
+                </li>
+                <li>
+                  <CheckCircleOutlineIcon /> Más liviana que el acero
+                </li>
+                <li>
+                  <CheckCircleOutlineIcon /> Reduce la huella de Carbono en el
+                  medio ambiente
+                </li>
               </ul>
             </div>
           </div>
