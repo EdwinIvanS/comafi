@@ -8,7 +8,7 @@ export default function Categories() {
           return (
             <div className="card-1" key={data.id}>
               <img src={data.img} alt="img" />
-              <p>{data.title}</p>
+              {/*<p>{data.title}</p> */}
             </div>
           );
         })}

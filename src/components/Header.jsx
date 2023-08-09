@@ -6,7 +6,7 @@ export default function Header() {
     <div className="container-header">
       <div className="header-logo">
         <Link to={"/"}>
-          <img src="/icon-comafi.jpeg" alt="logo" />
+          <img src="/comafi.png" alt="logo" />
         </Link>
       </div>
       <ul className="menu-links">

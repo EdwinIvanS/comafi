@@ -1,6 +1,6 @@
 
 export default function Footer() {
-  const phoneNumber = "123456789"; // Reemplaza esto con el número de teléfono deseado
+  const phoneNumber = "+50763804687"; // Reemplaza esto con el número de teléfono deseado
   const message = "Hola, estoy interesado en sus servicios."; // Opcional: Mensaje predefinido
 
   const handleWhatsAppClick = () => {
@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="container-footer">
         <div className="container-contacto">
           <ul>
-            <img src="/icon-comafi.jpeg" alt="logo" />
+            <img src="/comafi.png" alt="logo" />
             <li>© Copyright 2023</li>
           </ul>
         </div>

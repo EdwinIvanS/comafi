@@ -5,7 +5,7 @@ import GroupsIcon from "@mui/icons-material/Groups";
 export default function PageAbout() {
   return (
     <>
-      <div className="container">
+      <div className="container padding-bottom">
         <h1>Empresa</h1>
         <div className="container-card-empresa">
           <div className="card_empresa">

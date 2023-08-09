@@ -11,22 +11,18 @@ import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import WebhookIcon from "@mui/icons-material/Webhook";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { Link } from 'react-router-dom';
 
 function createData(Concepto, Valor) {
   return { Concepto, Valor };
 }
-const columns = [
-  {
-    id: 1,
-    name: "Concepto",
-  },
-  {
-    id: 2,
-    name: "Valor",
-  },
-];
+
+const handleDownloadClick = () => {
+  const link = document.createElement("a");
+  link.href = "/src/assets/programa-fibraplas-concrete.xlsm";
+  link.download = "programa-fibraplas-concrete.xlsm";
+  link.click();
+};
 
 const rows = [
   createData("Diametro Promedio", "0.6 mm"),
@@ -153,7 +149,7 @@ export default function PageProducts() {
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen=""
+              allowFullScreen=""
             ></iframe>
             <div className="colelem" id="u40617-4">
               <p id="u40617-2">
@@ -175,7 +171,7 @@ export default function PageProducts() {
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen=""
+              allowFullScreen=""
             ></iframe>
             <div className="colelem" id="u40622-4">
               <p id="u40617-2">
@@ -200,7 +196,7 @@ export default function PageProducts() {
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen=""
+              allowFullScreen=""
             ></iframe>
             <div className="colelem" id="u40629-4">
               <p id="u40617-2">
@@ -227,19 +223,25 @@ export default function PageProducts() {
             aria-label="simple table"
           >
             <TableHead>
-              <TableCell align="left">Concepto</TableCell>
-              <TableCell align="left">Valor</TableCell>
+              <TableRow>
+                <TableCell align="left">
+                  <strong>Concepto</strong>
+                </TableCell>
+                <TableCell align="left">
+                  <strong>Valor</strong>
+                </TableCell>
+              </TableRow>
             </TableHead>
             <TableBody>
-              {rows.map((row) => (
+              {rows.map((row, i) => (
                 <TableRow
-                  key={row.name}
+                  key={i}
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                 >
-                  <TableCell component="th" scope="row">
+                  <TableCell component="td" scope="row">
                     {row.Concepto}
                   </TableCell>
-                  <TableCell component="th" scope="row">
+                  <TableCell component="td" scope="row">
                     {row.Valor}
                   </TableCell>
                 </TableRow>
@@ -273,12 +275,10 @@ export default function PageProducts() {
             </div>
           </Link>
 
-          <Link to="https://www.abacol.co/fibraplas_concrete/assets/ficha-tecnica-fibraplas.pdf">
-            <div className="aspectos-tecnicos">
-              <WebhookIcon />
-              <p>Software de cálculo FPC</p>
-            </div>
-          </Link>
+          <div className="aspectos-tecnicos" onClick={handleDownloadClick}>
+            <WebhookIcon />
+            <p>Software de cálculo FPC</p>
+          </div>
         </div>
       </div>
     </>

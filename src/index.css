@@ -51,6 +51,7 @@ body{
   background-color: var(--palette-background-black);
   display: flex;
   width: 100%;
+  padding: 15px;
 }
 .header-logo{
   text-align: center;
@@ -71,7 +72,7 @@ body{
   padding: 0;
 }
 .menu-links li{
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   padding: 15px;
@@ -123,7 +124,7 @@ body{
 .MuiToolbar-root div a {
   color: black;
 }
-.MuiPaper-root .css-hyum1k-MuiToolbar-root{
+.MuiPaper-root .MuiToolbar-root{
   background-color: var(--palette-background-header);
   color: #000000;
 }
@@ -240,7 +241,7 @@ body{
 }
 .container-blog .proj-imgbx {
     position: relative;
-    border-radius: 30px; 
+    border-radius: 15px; 
     overflow: hidden;
     margin-bottom: 24px;
 }
@@ -336,8 +337,8 @@ body{
   text-align: center;
   background-color: var(--palette-background-black);
   color: white;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .container-contacto ul img{
   width: 300px
@@ -483,7 +484,7 @@ body{
 
 }
 .container-card-empresa .card_empresa{
-  width: 50%;  
+  width: 50%;
 }
 .container .card_empresa div svg{
   font-size: xxx-large;
@@ -507,7 +508,11 @@ body{
   text-align: justify;
   box-shadow:0px 4px 12px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin: 20px;
+  margin: 10px;
+}
+.padding-bottom{
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 /*Productos*/
@@ -521,13 +526,11 @@ body{
 .clearfix #u40614-2{
   margin-top: 15px;
 }
-
 .clearfix-p p{
   margin: 0;
   text-align: center;
 }
 .center .ul-product{
-
   text-align: initial;
 }
 .center .ul-product .ul-grup-1 li{
@@ -553,16 +556,14 @@ body{
 .colelem .u406303{
   padding-bottom: 15px;
 }
-
 .lineal-yelow{
   margin: 15px 0 15px;
   width: 100%;
   height: 9px;
   background: #FECB00;
 }
-
 .container #table-001{
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 .aspectos{
@@ -596,9 +597,14 @@ body{
   padding-bottom: 20px;
   margin-bottom: 15px;
 }
-/*Media query*/
 
-@media (max-width: 575px) {
+/*Media query*/
+@media (max-width: 575px) {  
+  .container-card .card-1,
+  .container-1 .container-blog .card {
+    width: 140px;
+    height: 140px;
+  }
   .center{
     flex-wrap: wrap;
   }
@@ -612,10 +618,20 @@ body{
   .aspectos{
     flex-wrap: wrap;
   }
+  .container #table-001 {
+    width: 95%;
+    margin: auto;
+  }
+  button.svelte-pb3e4p{
+    right: 3%!important;
+  }  
 }
 @media (max-width: 606px) {
   .container-1{
     max-width: 100%;
+  }
+  .container-main .container-header{
+    display: none;
   }
 }
 @media (max-width: 643px) {
@@ -627,13 +643,21 @@ body{
   .container .container-card-empresa {
     display: block;
   }
-  .container-card-empresa .card_empresa {
-    width: 92%;
+  .container .container-card-empresa .card_empresa {
+    width: 98%;
     margin:auto;
     margin-top:10px;
   }
+  .container .card_empresa {
+    width: 98%;
+    margin:auto;
+  }
   .details-product{
     flex-wrap: wrap;
+  }
+  .clearfix-card .grpelem_shared{
+    width: 100%;
+    margin: 10px 0;
   }
 }
 @media (max-width: 849px) {
@@ -658,3 +682,4 @@ body{
     text-align: center;
   }
 }
+  

@@ -1,9 +1,9 @@
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from '@mui/material/Toolbar';
+import Toolbar from "@mui/material/Toolbar";
 import AppBar from "@mui/material/AppBar";
-import Drawer from '@mui/material/Drawer';
-import List from '@mui/material/List';
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
 import Button from "@mui/material/Button";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
@@ -42,10 +42,10 @@ export default function AppBarPrincipal() {
       setIsMobileView(window.innerWidth <= 606);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -66,18 +66,17 @@ export default function AppBarPrincipal() {
             </IconButton>
           )}
           {/* Los botones de opciones se muestran solo en vista de escritorio */}
+
           <div style={{ margin: "auto" }}>
             {!isMobileView && (
               <>
                 {listNav.map((data) => {
                   return (
-                    <>
-                      <Link to={serverPath + data.path} key={data.id}>
-                        <Button color="inherit" style={{ padding: "10px" }}>
-                          {data.name}
-                        </Button>
-                      </Link>
-                    </>
+                    <Link to={serverPath + data.path} key={data.id}>
+                      <Button color="inherit" style={{ padding: "10px" }}>
+                        {data.name}
+                      </Button>
+                    </Link>
                   );
                 })}
               </>
@@ -85,7 +84,7 @@ export default function AppBarPrincipal() {
           </div>
         </Toolbar>
       </AppBar>
-      
+
       {/* El Drawer se muestra solo en vista móvil */}
       {isMobileView && (
         <Drawer anchor="left" open={isDrawerOpen} onClose={toggleDrawer}>

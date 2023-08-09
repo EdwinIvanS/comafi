@@ -2,8 +2,8 @@
 export const listCategories = [
   {
     id: 1,
-    img: "/wire.png",
-    title: "Fibraplas Concrete",    
+    img: "/FIBRAPLAS_1.png",
+    title: "Fibraplas Concrete",
   },
 ];
   
