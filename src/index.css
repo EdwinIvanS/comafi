@@ -269,7 +269,70 @@ body{
     top: 50%;
     opacity: 1;
 }
-
+.card-Blog{
+  width: 240px; 
+  height: 240px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0 0 0 / .15);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+.card-Blog .image{
+  width: 140px; 
+  height: 140px;
+  background: #333;
+  position: absolute;
+  top: 20px;
+  border-radius: 12px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.content-Blog{
+  position: absolute;
+  top: 170px;
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+  padding: 0 10px;
+  text-align: center;
+  transition: 0.5s;
+}
+.content-Blog h2{
+  color: #03a9f4;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.content-Blog div strong{
+  font-size: 14px;
+}
+.card-Blog:hover{
+  height: 240px;
+}
+.card-Blog:hover .image{
+  top: -50px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0 0 0 / .3);
+}
+.card-Blog:hover .content-Blog{
+  top: 80px;
+  height: 250px;
+}
+.content-Blog a{
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 10px;
+  background: #03a9f4;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 5px;
+}
 /*Formulario*/
 .formulario{
   padding: 0px 30px 25px;
@@ -599,10 +662,33 @@ body{
   body{
     font-size: 12px;
   }
-  .container-card .card-1,
-  .container-1 .container-blog .card {
+  .container-card .card-1{
     width: 140px;
     height: 140px;
+  }
+  .container-1 .container-blog .card-Blog {
+    width: 140px;
+    height: 160px;
+  }
+  .container-1 .container-blog .card-Blog .image{
+  width: 80px; 
+  height: 80px;
+  }
+  .container-1 .container-blog .card-Blog .content-Blog{
+    top: 105px;
+  }
+  .container-1 .container-blog .card-Blog:hover .image{
+    top: -30px;
+  }
+  .container-1 .container-blog .card-Blog:hover .content-Blog{
+    top: 40px;
+  }
+  .container-1 .container-blog .card-Blog .content-Blog h2{
+    font-size: 20px;
+    margin: 6px;
+  }
+  .container-1 .container-blog .card-Blog .content-Blog div strong{
+    font-size: 10px;
   }
   .center{
     flex-wrap: wrap;
@@ -695,3 +781,8 @@ body{
   }
 }
   
+
+
+
+
+

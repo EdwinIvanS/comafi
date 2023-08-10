@@ -7,14 +7,18 @@ export default function Blog() {
       <div className="container-blog">
         {blogs.map((data) => {
           return (
-            <div className="card proj-imgbx" key={data.id}>
-              <img src={data.img} alt="img" />
-              <div className="proj-txtx">
-                <strong>{data.title}</strong>
+            <div className="card-Blog" key={data.id}>
+              <img className="image" src={data.img} alt="img" />
+              <div className="content-Blog">
+                <h2>Title</h2>
+                <div>
+                  <strong>{data.title}</strong>
+                </div>
+                <a href="#">Continuar</a>
               </div>
             </div>
           );
-        })}        
+        })}
       </div>
     </div>
   );

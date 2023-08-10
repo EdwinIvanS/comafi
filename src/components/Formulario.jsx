@@ -104,7 +104,7 @@ export default function Formulario() {
             inquietudes y necesidades en línea, de todo tu proceso de compra y
             tramites con una asesoría especializada.
           </p>
-          <Link to="">
+          <Link to="https://docs.google.com/forms/d/1cXcJvvf_aXKBCj8Y-X8zDP6XaFc44VUHVm4xZWopvqA/viewform?edit_requested=true">
             <Button
               variant="contained"
               style={{ width: "150px", margin: "auto", marginTop: "20px" }}
