@@ -1,10 +1,10 @@
 
-import Formulario from "../Formulario";
+import Contact from "../Contact";
 
 export default function PageContact() {
   return (
     <>
-      <Formulario />
+      <Contact />
     </>
   );
 }
