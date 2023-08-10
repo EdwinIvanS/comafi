@@ -73,26 +73,30 @@ export default function PageProducts() {
             <div className="ul-product">
               <ul className="ul-grup-1">
                 <li>
-                  <CheckCircleOutlineIcon /> Reemplaza la Malla Electrosoldada
+                  <CheckCircleOutlineIcon />{" "}
+                  <div>Reemplaza la Malla Electrosoldada</div>
                 </li>
                 <li>
-                  <CheckCircleOutlineIcon /> AHORRO DEL MÁS 50% frente a la
-                  malla electrosoldada
+                  <CheckCircleOutlineIcon />{" "}
+                  <div>AHORRO DEL MÁS 50% frente a la malla electrosoldada</div>
                 </li>
                 <li>
-                  <CheckCircleOutlineIcon /> Con 4 mazos rinde 1.5m2 de placa de
-                  10cm
+                  <CheckCircleOutlineIcon />{" "}
+                  <div>Con 4 mazos rinde 1.5m2 de placa de 10cm</div>
                 </li>
                 <li>
-                  <CheckCircleOutlineIcon /> Mejora las propiedades de los pisos
-                  y entre pisos de Concreto
+                  <CheckCircleOutlineIcon />{" "}
+                  <div>
+                    Mejora las propiedades de los pisos y entre pisos de
+                    Concreto
+                  </div>
                 </li>
                 <li>
-                  <CheckCircleOutlineIcon /> Más liviana que el acero
+                  <CheckCircleOutlineIcon /> <div>Más liviana que el acero</div>
                 </li>
                 <li>
-                  <CheckCircleOutlineIcon /> Reduce la huella de Carbono en el
-                  medio ambiente
+                  <CheckCircleOutlineIcon />{" "}
+                  <div>Reduce la huella de Carbono en el medio ambiente</div>
                 </li>
               </ul>
             </div>
@@ -127,7 +131,6 @@ export default function PageProducts() {
           </div>
         </div>
       </div>
-
       <div className="container clearfix">
         <h1>Personas que se han unido al Poder de Fibraplas Concrete</h1>
         <p id="u40614-2">
@@ -212,9 +215,7 @@ export default function PageProducts() {
           </div>
         </div>
       </div>
-
       <div className="lineal-yelow"></div>
-
       <div className="container tb-01">
         <h1>Especificaciones Técnicas</h1>
         <TableContainer component={Paper} id="table-001">
@@ -250,7 +251,6 @@ export default function PageProducts() {
           </Table>
         </TableContainer>
       </div>
-
       <div className="use tb-01">
         <h1>Conoce y Descarga más Aspectos Técnicos:</h1>
         <div className="aspectos">

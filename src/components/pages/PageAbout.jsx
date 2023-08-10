@@ -35,7 +35,6 @@ export default function PageAbout() {
             </p>
           </div>
         </div>
-
         <div className="card_empresa">
           <div>
             <GroupsIcon />

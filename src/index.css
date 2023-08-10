@@ -563,9 +563,12 @@ body{
 }
 .center .ul-product .ul-grup-1 li{
   padding: 5px;
+  display: flex;
+  align-items: center;
 }
 .center .ul-product .ul-grup-1 svg{
   color: var(--palette-background-header);
+  margin-right: 8px;
 }
 .center .img-product {
   display: flex;
