@@ -10,6 +10,7 @@ import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import { useState } from "react";
 import { Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function Formulario() {
   const [name, setName] = useState("");
@@ -103,12 +104,21 @@ export default function Formulario() {
             inquietudes y necesidades en línea, de todo tu proceso de compra y
             tramites con una asesoría especializada.
           </p>
+          <Link to="">
+            <Button
+              variant="contained"
+              style={{ width: "150px", margin: "auto", marginTop: "20px" }}
+            >
+              Enviar
+            </Button>
+          </Link>
         </div>
         <div
           className="container-1 mt-4 contacto"
           style={{
             maxWidth: "85%",
             boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.2)",
+            display: "none",
           }}
         >
           <div className="centered"></div>

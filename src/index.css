@@ -163,7 +163,9 @@ body{
   height: 8px;
   background: var(--palette-background-navbar);
 }
-
+.carousel-item img{
+  width: 100%;
+}
 /*Categorries*/
 .container-card{
   display: flex;
