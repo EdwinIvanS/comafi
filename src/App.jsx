@@ -4,26 +4,21 @@ import PageAbout from "./components/pages/PageAbout";
 import PageContact from "./components/pages/PageContact";
 import PageGallery from "./components/pages/PageGallery";
 import PageProducts from "./components/pages/PageProducts";
-import Header from "./components/Header";
-import AppBarPrincipal from "./components/AppBarPrincipal";
-import Footer from "./components/Footer";
+import Layout from './components/Layout';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="container-main">
-        <Header />
-        <AppBarPrincipal />
+    <div className="container-main">
+      <BrowserRouter basename="/">
         <Routes>
-          <Route path="/" exact={true} element={<PagePrincipal />} />
-          <Route path="/AboutUs" element={<PageAbout />} />
-          <Route path="/Catalog" element={<PageProducts />} />
-          <Route path="/Contact" element={<PageContact />} />
-          <Route path="/Gallery" element={<PageGallery />} />
+          <Route path="/" exact={true} element={<Layout> <PagePrincipal/> </Layout>} />
+          <Route path="/AboutUs" element={<Layout> <PageAbout /> </Layout>} />
+          <Route path="/Catalog" element={<Layout> <PageProducts /> </Layout>} />
+          <Route path="/Contact" element={<Layout> <PageContact /> </Layout>} />
+          <Route path="/Gallery" element={<Layout> <PageGallery /> </Layout>} />
         </Routes>
-        <Footer />
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </div>
   );
 }
 

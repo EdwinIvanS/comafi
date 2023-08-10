@@ -68,6 +68,17 @@ export default function AppBarPrincipal() {
           {/* Los botones de opciones se muestran solo en vista de escritorio */}
 
           <div style={{ margin: "auto" }}>
+            {isMobileView && (
+              <div className="header-logo">
+                <Link to={"/"}>
+                  <img
+                    src="/comafi.png"
+                    alt="logo"
+                    style={{ width: "100%"}}
+                  />
+                </Link>
+              </div>
+            )}
             {!isMobileView && (
               <>
                 {listNav.map((data) => {

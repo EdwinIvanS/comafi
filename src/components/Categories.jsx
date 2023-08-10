@@ -6,8 +6,16 @@ export default function Categories() {
       <div className="container-card">
         {listCategories.map((data) => {
           return (
-            <div className="card-1" key={data.id}>
-              <img src={data.img} alt="img" />
+            <div
+              className="card-1"
+              key={data.id}
+              style={{ padding: "0" }}
+            >
+              <img
+                src={data.img}
+                alt="img"
+                style={{ width: "100%", borderRadius: "15px" }}
+              />
               {/*<p>{data.title}</p> */}
             </div>
           );
