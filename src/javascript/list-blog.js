@@ -10,7 +10,7 @@ export const blogs = [
   {
     id: 2,
     img: "/mazo-fibra.png",
-    title: "REPLACECING THE DOORBELL YOURSELF TIPS",
+    title: "REPLACECING THE DOORBELL TIPS",
     publicado: "Publicado por Comafi | septiembre 24, 2021",
     descripcion:
       "Las electrobombas de agua son dispositivos utilizados para producir el movimiento o desplazamiento de un fluido en contra de la presión a través",

@@ -1,6 +1,8 @@
 import Button from "@mui/material/Button";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import { Link } from "react-router-dom";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import AddLocationIcon from "@mui/icons-material/AddLocation";
 
 export default function Contact() {
 
@@ -15,16 +17,7 @@ export default function Contact() {
         }}
       >
         <h1>Contactanos</h1>
-        <div
-          className="card"
-          style={{
-            maxWidth: "85%",
-            margin: "auto",
-            padding: "30px",
-            boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.2)",
-            border: "none",
-          }}
-        >
+        <div className="card">
           <SupportAgentIcon />
           <p>
             Hacemos que tu experiencia sea más satisfactoria; atendemos tus
@@ -37,9 +30,34 @@ export default function Contact() {
               variant="contained"
               style={{ width: "150px", margin: "auto", marginTop: "20px" }}
             >
-              Enviar
+              Contactar
             </Button>
           </Link>
+        </div>
+
+        <div className="card card-margin">
+          <div>
+            <p>
+              <WhatsAppIcon />
+              <strong>WhatsApp : </strong>
+              +507 6380-4687
+            </p>
+          </div>
+          <div>
+            <p>
+              <AddLocationIcon />
+              <strong>Dirección : </strong>
+              Torre PDC, Costa del Este, Piso 10 Ciudad de Panamá, Panamá
+            </p>
+          </div>
+          <div>
+            <p>
+              <SupportAgentIcon />
+              <strong>Horarios de atención : </strong>
+              Lunes a jueves 07:00 a.m. a 03:00 p.m, Viernes 07:00 a.m. a 02:00
+              p.m
+            </p>
+          </div>
         </div>
       </div>
     </>

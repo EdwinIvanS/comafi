@@ -5,19 +5,19 @@ export const contacto = [
   {
     id: 1,
     name: "TELÉFONO",
-    phone: "(57+1) 321 428 8580",
+    phone: "+507 6380-4687",
     icon: FaPhoneVolume,
   },
   {
     id: 2,
     name: "DIRECCIÓN",
-    phone: "Calle 50 # 28-85 Sur",
+    phone: "Torre PDC, Costa del Este, Piso 10 Ciudad de Panamá",
     icon: FaSearchLocation,
   },
   {
     id: 3,
     name: "CORREO",
-    phone: "ferrexiosas@gmail.com",
+    phone: "ventas@conafipanama.com",
     icon: MdEmail,
   },
 ];
