@@ -428,6 +428,10 @@ body{
 .container-contacto ul li {
   list-style: none;
 }
+.container-legal ul li:hover{
+  color: var(--palette-background-navbar);
+  cursor: pointer;
+}
 .container-redes ul{
   display: flex;
 }

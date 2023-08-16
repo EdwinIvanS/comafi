@@ -9,6 +9,14 @@ export default function Footer() {
     )}`;
     window.location.href = url;
   };
+
+  const handleDownloadClick = () => {
+    const link = document.createElement("a");
+    link.href = "/src/assets/TERMINOS Y CONDICIONES PAGINA WEB COMAFI.docx";
+    link.download = "TERMINOS Y CONDICIONES PAGINA WEB COMAFI.docx";
+    link.click();
+  };
+
   return (
     <>
       <div className="lineal"></div>
@@ -22,9 +30,9 @@ export default function Footer() {
         <div className="container-legal">
           <h4>Legales</h4>
           <ul>
-            <li>Política de privacidad y protección de datos personales</li>
-            <li>Política de ventas, devoluciones y garantías</li>
-            <li>Garantía de productos</li>
+            <li onClick={handleDownloadClick} id="li-datos">
+              Política de privacidad y protección de datos personales
+            </li>
           </ul>
         </div>
         <div className="container-contacto">
@@ -40,8 +48,6 @@ export default function Footer() {
           <div className="icons-redes">
             <img src="/facebook.png" alt="f" />
             <img src="/instagram.png" alt="i" />
-            <img src="/linkedin.png" alt="l" />
-            <img src="/youtube.png" alt="y" />
           </div>
         </div>
       </div>
