@@ -1,4 +1,4 @@
-import Carrusel from '../Carrusel';
+import CarruselProduct from '../CarruselProduct';
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -50,7 +50,7 @@ const rows = [
 export default function PageProducts() {
   return (
     <>
-      <Carrusel />
+      <CarruselProduct />
       <div id="u38313">
         <div className="container clearfix">
           <h1 id="u38332-2">Fibraplas Concrete</h1>

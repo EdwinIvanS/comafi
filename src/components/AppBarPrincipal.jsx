@@ -14,7 +14,7 @@ import { listNav } from "../javascript/list-navbar";
 export default function AppBarPrincipal() {
   const serverPath = window.location.origin;
   const [isDrawerOpen, setDrawerOpen] = useState(false);
-  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 606);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 620);
 
   const toggleDrawer = () => {
     setDrawerOpen(!isDrawerOpen);
@@ -39,7 +39,7 @@ export default function AppBarPrincipal() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 606);
+      setIsMobileView(window.innerWidth <= 620);
     };
 
     window.addEventListener("resize", handleResize);

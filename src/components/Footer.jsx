@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="container-contacto">
           <h4>Contacto</h4>
           <ul>
-            <li>Correo: ventas@conafipanama.com</li>
+            <li>Correo: ventas@comafipanama.com</li>
             <li>Teléfono: +507 6673-5473</li>
             <li>WhatsApp: +507 6380-4687</li>
           </ul>

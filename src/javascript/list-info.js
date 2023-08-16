@@ -10,14 +10,14 @@ export const contacto = [
   },
   {
     id: 2,
-    name: "DIRECCIÓN",
-    phone: "Torre PDC, Costa del Este, Piso 10 Ciudad de Panamá",
-    icon: FaSearchLocation,
+    name: "CORREO",
+    phone: "ventas@comafipanama.com",
+    icon: MdEmail,
   },
   {
     id: 3,
-    name: "CORREO",
-    phone: "ventas@conafipanama.com",
-    icon: MdEmail,
+    name: "DIRECCIÓN",
+    phone: "Torre PDC, Costa del Este, Piso 10 Ciudad de Panamá",
+    icon: FaSearchLocation,
   },
 ];
