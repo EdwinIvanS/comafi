@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   const phoneNumber = "+50763804687"; // Reemplaza esto con el número de teléfono deseado
@@ -8,13 +9,6 @@ export default function Footer() {
       message
     )}`;
     window.location.href = url;
-  };
-
-  const handleDownloadClick = () => {
-    const link = document.createElement("a");
-    link.href = "/src/assets/TERMINOS Y CONDICIONES PAGINA WEB COMAFI.docx";
-    link.download = "TERMINOS Y CONDICIONES PAGINA WEB COMAFI.docx";
-    link.click();
   };
 
   return (
@@ -30,9 +24,11 @@ export default function Footer() {
         <div className="container-legal">
           <h4>Legales</h4>
           <ul>
-            <li onClick={handleDownloadClick} id="li-datos">
-              Política de privacidad y protección de datos personales
-            </li>
+            <Link to={"/Politics"}>
+              <li id="li-datos">
+                Política de privacidad y protección de datos personales
+              </li>
+            </Link>
           </ul>
         </div>
         <div className="container-contacto">

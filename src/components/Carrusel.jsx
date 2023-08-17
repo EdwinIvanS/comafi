@@ -21,20 +21,16 @@ export default function Carrusel() {
       <Carousel activeIndex={activeIndex} onSelect={handleSelect}>
         <Carousel.Item>
           <video ref={videoRef} autoPlay muted width="100%" height="auto">
-            <source src="/carrusel-git.mp4" type="video/mp4" />
+            <source src="/carrusel-git2.mp4" type="video/mp4" />
+          </video>
+        </Carousel.Item>
+        <Carousel.Item>
+          <video ref={videoRef} autoPlay muted width="100%" height="auto">
+            <source src="/carrusel-git3.mp4" type="video/mp4" />
           </video>
         </Carousel.Item>
         <Carousel.Item>
           <img src="/carrusel2.jpeg" alt="1" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src="/carrusel-amarillo.png" alt="1" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src="/carrusel-negro.png" alt="1" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src="/carrusel-rojo.png" alt="1" />
         </Carousel.Item>
       </Carousel>
     </div>

@@ -424,6 +424,10 @@ body{
 .container-contacto ul {
   padding: 0;
 }
+.container-legal ul a {
+text-decoration: none;
+color: white;
+}
 .container-legal ul li,
 .container-contacto ul li {
   list-style: none;
@@ -677,6 +681,21 @@ body{
   margin-bottom: 15px;
 }
 
+/*Politicts*/
+.container-1 .document{
+  padding: 50px;
+  text-align: justify;
+  max-height: calc(100vh - 260px);
+  margin-bottom: 20px;
+  min-height: 70px;
+  overflow-y: auto;
+}
+
+.container-1 .document h5{
+  padding: 10px 0 15px;
+  text-align: center;
+}
+
 /*Media query*/
 @media (max-width: 575px) {  
   body{
@@ -726,6 +745,9 @@ body{
   .container #table-001 {
     width: 95%;
     margin: auto;
+  }
+  .container-1 .document{
+    padding: 25px;
   }
   button.svelte-pb3e4p{
     right: 3%!important;

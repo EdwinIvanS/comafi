@@ -5,6 +5,7 @@ import PageContact from "./components/pages/PageContact";
 import PageGallery from "./components/pages/PageGallery";
 import PageProducts from "./components/pages/PageProducts";
 import Layout from './components/Layout';
+import PagePolitics from "./components/pages/PagePolitics";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/Catalog" element={<Layout> <PageProducts /> </Layout>} />
           <Route path="/Contact" element={<Layout> <PageContact /> </Layout>} />
           <Route path="/Gallery" element={<Layout> <PageGallery /> </Layout>} />
+          <Route path="/Politics" element={<Layout> <PagePolitics /> </Layout>} />
         </Routes>
       </BrowserRouter>
     </div>
