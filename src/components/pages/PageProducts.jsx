@@ -12,6 +12,7 @@ import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import WebhookIcon from "@mui/icons-material/Webhook";
 import { Link } from 'react-router-dom';
+import ScrollToTop from "../ScrollToTop";
 
 function createData(Concepto, Valor) {
   return { Concepto, Valor };
@@ -48,8 +49,10 @@ const rows = [
 ];
 
 export default function PageProducts() {
+ 
   return (
     <>
+      <ScrollToTop />
       <CarruselProduct />
       <div id="u38313">
         <div className="container clearfix">

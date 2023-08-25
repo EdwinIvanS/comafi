@@ -1,9 +1,13 @@
 import SportsScoreIcon from "@mui/icons-material/SportsScore";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import GroupsIcon from "@mui/icons-material/Groups";
+import ScrollToTop from "../ScrollToTop";
 
 export default function PageAbout() {
+
   return (
+    <>
+      <ScrollToTop />
       <div className="container padding-bottom">
         <h1>Empresa</h1>
         <div className="container-card-empresa">
@@ -66,5 +70,6 @@ export default function PageAbout() {
           </p>
         </div>
       </div>
+    </>
   );
 }
