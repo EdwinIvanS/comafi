@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom";
 
 export default function Footer() {
-  const phoneNumber = "+50763804687"; // Reemplaza esto con el número de teléfono deseado
-  const message = "Hola, estoy interesado en sus servicios."; // Opcional: Mensaje predefinido
-
+  const phoneNumber = "+50763804687";
+  const message = "Hola, estoy interesado en sus servicios.";
   const handleWhatsAppClick = () => {
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message
-    )}`;
-    window.location.href = url;
+    try {
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+        message
+      )}`;
+      window.location.href = url;
+    } catch (error) {
+      console.error("Error al abrir el enlace de WhatsApp:", error);
+    }
   };
 
   return (
