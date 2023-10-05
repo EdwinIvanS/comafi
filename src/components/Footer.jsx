@@ -42,8 +42,20 @@ export default function Footer() {
         <div className="container-redes">
           <h4>¡Síguenos en nuestras redes!</h4>
           <div className="icons-redes">
-            <img src="/facebook.png" alt="f" />
-            <img src="/instagram.png" alt="i" />
+            <Link
+              to={
+                "https://www.instagram.com/comafipty/?igshid=MzRlODBiNWFlZA%3D%3D"
+              }
+            >
+              <img src="/facebook.png" alt="f" />
+            </Link>
+            <Link
+              to={
+                "https://www.instagram.com/comafipty/?igshid=MzRlODBiNWFlZA%3D%3D"
+              }
+            >
+              <img src="/instagram.png" alt="i" />
+            </Link>
           </div>
         </div>
       </div>
